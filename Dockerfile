@@ -6,4 +6,4 @@ COPY . .
 
 RUN pip install -r requirements.txt && pip cache purge  
 
-CMD python api.py
+CMD python run.py
