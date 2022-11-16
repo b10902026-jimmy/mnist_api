@@ -7,7 +7,7 @@
 4. <code>sudo docker build -t ~~image name:tag~~ .</code>     #build image via Dockerfile,which is under the local folder.
 5. <code>sudo docker image ls</code>     #check the image you build
 6. <code>sudo docker run -itd -p ~~port~~:3000 --name ~~container name~~ ~~image name:tag~~</code> #create a container to run the image,connect your port to container's 3000 port
-7. <code>sudo docker ps -a</code> #check your container's process
+7. <code>sudo docker ps </code> #check your container's process
 
 ## Check some docker's command:
 https://ithelp.ithome.com.tw/articles/10262165?sc=rss.iron
