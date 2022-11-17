@@ -6,7 +6,7 @@
 3. cd into "mnist_api"
 4. <code>sudo docker build -t ~~image name:tag~~ .</code>     #build image via Dockerfile,which is under the local folder.
        
-	 * Don't miss the dot "." in the end of command,which means to use the Dockerfile in the local directory.
+	 * Don't miss the dot "." in the end of command,which means to use the Dockerfile in the local directory to build.
 
 5. <code>sudo docker image ls</code>     #check the image you build
 6. <code>sudo docker run -itd -p ~~port~~:3000 --name ~~container name~~ ~~image name:tag~~</code> #create a container to run the image,connect your port to container's 3000 port
