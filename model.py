@@ -9,7 +9,8 @@ Original file is located at
 import numpy as np
 import cv2
 import time
-
+import base64
+import json
 
 from keras.models import load_model
 model = load_model('./Saved_model/jimmy_model.h5')
@@ -22,8 +23,8 @@ model.load_weights('./Saved_model/jimmy_model.h5')
 
 
 tStart = time.time() #計時開始
-#base64編碼
-'''imgae_path='/home/jimmy/python/opencv/testimage/20221008_162608.jpg'
+'''#base64編碼
+imgae_path='/home/jimmy/python/mnist_api/3.jpg'
 img_file = open(imgae_path,'rb')
 img_b64encode = base64.b64encode(img_file.read())
 img_b64encode = str(img_b64encode,'utf-8')
